@@ -1,0 +1,420 @@
+/* Fonts */
+  @import url('https://fonts.googleapis.com/css?family=Monoton');
+  /* Titulo */
+  @import url('https://fonts.googleapis.com/css?family=Lato:900&subset=latin-ext');
+  @import url('https://fonts.googleapis.com/css?family=Dosis');
+  @import url('https://fonts.googleapis.com/css?family=Montserrat:300');
+  @import url('https://fonts.googleapis.com/css?family=Amatic+SC:700');
+  @import url('https://fonts.googleapis.com/css?family=Alegreya+SC:400,400i');
+  @import url('https://fonts.googleapis.com/css?family=Playfair+Display+SC:400,400i');
+      /*Preferidas*/
+      @import url('https://fonts.googleapis.com/css?family=Poiret+One');
+      /*Descartável*/
+      @import url('https://fonts.googleapis.com/css?family=EB+Garamond');
+
+  /* Descrição */
+  @import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
+  @import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
+  @import url('https://fonts.googleapis.com/css?family=Architects+Daughter');
+      /*Preferidas*/
+      @import url('https://fonts.googleapis.com/css?family=Handlee');
+      @import url('https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope');
+      /*Descartável*/
+      @import url('https://fonts.googleapis.com/css?family=Satisfy');
+
+/* index */
+body{
+  overflow-x: hidden;
+}
+.content{
+  margin-top: 50px;
+  }
+  .container-fluid{
+    margin: 40px auto;
+  }
+#navbar{
+    color: #000;
+    padding: 10px 0px 10px 0px;
+    background: #fff;
+    border-bottom: 0px;
+    box-shadow: 0 4px 2px -2px #dddddd;
+  }
+  .navbar-default .navbar-collapse{
+    border: transparent;
+  }
+  #navbar .navbar-left li a{
+    font-size: 10px;
+    letter-spacing:2px;
+    color: #000;
+    }
+  #navbar .navbar-left li:not(:first-child):before {
+      content: " | ";
+      position: absolute;
+      top: 30%;
+      left:-2px;
+      color: #fff;
+  }
+  #navbar .navbar-right li a{
+    color: #fff;
+  }
+  #navbar .navbar-right li:first-child:hover{
+    background: #833ab4;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  #navbar .navbar-right li:nth-child(2):hover{
+    background: #FF0000;  /* fallback for old browsers */
+  }
+  #navbar .navbar-right li:nth-child(3):hover{
+    background: #3b5998;  /* fallback for old browsers */
+  }
+  #navbar .navbar-left li a:hover{
+      color: #c4c4c4;
+    }
+  @media (max-width: 48em) {
+    #navbar .navbar-right{
+      display: none;
+    }
+    #navbar .navbar-left{
+      text-align: center;
+    }
+  }
+.post{
+  margin-bottom: 10%;
+  }
+  #btn-instagram{
+
+    /* AZUL ESCURO
+    background: #141E30;
+    background: -webkit-linear-gradient(to right, #243B55, #141E30);
+    background: linear-gradient(to right, #243B55, #141E30); */
+
+
+
+
+
+    /* LARANJA INICIAL
+    background: #FF512F; fallback for old browsers
+    background: -webkit-linear-gradient(to right, #F09819, #FF512F);
+    background: linear-gradient(to right, #F09819, #FF512F);*/
+
+
+    background: #232526;
+    background: -webkit-linear-gradient(to right, #414345, #232526);
+    background: linear-gradient(to right, #414345, #232526);
+    border: 0px transparent;
+    border-radius: 30px;
+    color: #fff;
+    padding: 10px 20px 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+    font-family: 'Poiret One', sans-serif;
+    box-shadow: 0 4px 2px -2px gray;
+  }
+  #btn-instagram:before,
+  #btn-instagram:after {
+    content: '';
+    height: 1px;
+    background: #ccc;
+    width: 10em;
+    display: block;
+    position: absolute;
+    height: 2px;
+    top: 1em;
+  }
+  #btn-instagram:before {
+    left: -11em;
+  }
+  #btn-instagram:after {
+    right: -11em;
+  }
+  .post figure {
+  	position: relative;
+  }
+  .post img{
+    width: 100%;
+    transition: 0.5s all;
+
+  }
+  .post img:hover {
+    filter: brightness(70%);
+    transition: 0.7s all;
+  }
+  .post .post_description{
+    margin: 30px auto;
+    font-family: 'Handlee', sans-serif;
+    font-size: 20px;
+    color: #4c4c4c;
+  }
+  .post h1{
+    font-family: 'Poiret One', sans-serif;
+    font-size: 60px;
+    color: rgb(0,0,0);
+    text-transform: uppercase;
+    margin-bottom: 5%;
+  }
+  .post h1 a{
+    text-decoration: none;
+    position: relative;
+    color: rgb(0,0,0);
+    text-transform: uppercase;
+
+  }
+  .post h1 a:after {
+    transition: 1s all;
+  }
+  .post h1 a:hover:after{
+    color:  rgb(0,0,0);
+    border-right: 2px solid currentcolor;
+    border-bottom: 2px solid currentcolor;
+    content: '';
+    position: absolute;
+    width: 16px;
+    top:20px;
+    transition: 1s all;
+    height: 16px;
+    transform: rotate(-45deg);
+    -webkit-animation: mymove 1s infinite;
+    animation: mymove 1s infinite;
+  }
+  /* Safari 4.0 - 8.0 */
+  @-webkit-keyframes mymove {
+    0%   {right: -10px;}
+    50%  {right: -100px;}
+    75%  {right: -100px;}
+    100% {right: -11px;}
+  }
+  /* Standard syntax */
+  @keyframes mymove {
+      0%   {right: -10px;}
+      50%  {right: -100px;}
+      75%  {right: -100px;}
+      100% {right: -11px;}
+  }
+  .post p, h4{
+    font-family: 'Dosis', sans-serif;
+  }
+  .post .menu-share{
+    list-style: none;
+  }
+    .post .menu-share li{
+      display: inline;
+    }
+  .share-section{
+    margin-top: 8%;
+  }
+  .share-btns ul{
+    list-style: none;
+    padding-left: 0;
+  }
+  .share-btns ul li{
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+    line-height: 60px;
+    position: relative;
+    width: 50px;
+    font-size: 25px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 4px 2px -2px gray;
+  }
+  .share-btns ul a:nth-child(1):hover li{
+    background: #00aced;
+    color: #fff;
+  }
+  .share-btns ul a:nth-child(2):hover li{
+    background: #3b5998;
+    color: #fff;
+  }
+  .share-btns ul a{
+    color: #333;
+  }
+.bio{}
+  .bio img{
+    width: 100%;
+  }
+  .text-black{
+    font-family: 'Poiret One', sans-serif;
+    font-size: 40px;
+    color: rgb(255,255,255);
+    background: rgb(0, 0, 0);
+    padding: 10px;
+  }
+  .bio .profile_bio{
+    margin: 30px auto;
+    font-family: 'Handlee', sans-serif;
+    font-size: 20px;
+    color: #4c4c4c;
+  }
+  @media (max-width: 48em) {
+    .bio{
+      display: none;
+    }
+  }
+.most-popular{
+  }
+  .most-popular table{
+    width: 100%;
+    text-align: center;
+  }
+  .most-popular table tbody tr{
+    padding: 30px !important;
+  }
+  .most-popular table tbody tr td figure{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100px;
+  }
+  .most-popular table tbody tr td figure img{
+    width: 50%;
+    margin-top: -10%;
+  }
+  .most-popular table tbody tr td h4{
+    font-size: 50px;
+    text-align: left;
+    font-family: 'Poiret One', sans-serif;
+
+  }
+  @media (max-width: 48em) {
+    .most-popular{
+      display: none;
+    }
+  }
+#instagram{
+  margin-bottom: 0 !important;
+  padding: 0;
+  }
+  #instagram h1{
+    font-size: 5vw;
+    font-family: 'Monoton', cursive;
+  }
+  #odi{
+    width:100%;
+    display:block;
+    margin:0;
+    padding:0;
+    line-height:0;
+  }
+  #odi img{
+    height:100%;
+    width:100%}
+  #odi a{
+    padding:0;
+    margin:0;
+    position:relative;
+    display:inline-block
+  }
+  #odi li{
+    width:12.5%;
+    display:inline-block;
+    position:relative;
+    padding:0!important;
+    float:left
+  }
+  #odi .instagrid-z{
+    transition: 0.5s all;
+    width:100%;height:100%;margin-top:-100%;opacity:0;letter-spacing:1px;background:rgba(0,0,0,0.7);position:absolute;font:normal 600 12px Catamaran,sans-serif;color:#fff;line-height:normal}
+  #odi a:hover .instagrid-z{
+    opacity:0.5;
+    zoom:1;
+    transition: 0.5s all;
+    filter:alpha(opacity=100)
+  }
+  .instagrids{
+    display:table;
+    vertical-align:middle;
+    height:100%;
+    width:100%
+  }
+  .instagrid-outter{
+    display:table-cell;
+    vertical-align:middle;
+    height:100%;width:100%;
+    text-align:center
+  }
+  #instagridz.widget.insta h2.title{
+    text-align:center
+  }
+  #instagridz.widget.insta h2.title:before{
+    content:&#39;
+    border-top:0 solid #efefef;
+    left:0;right:0;position:absolute;
+    top:50%
+  }
+  #instagridz.widget.insta h2.title p{
+    display:inline-block;background:#000;
+    padding:0 20px;
+    position:relative
+  }
+  @media (max-width: 33.9em){
+    #odi{width:100%;display:block;margin:0;padding:0;line-height:0}
+    #odi li,#odi li:nth-child(1),
+    #odi li:nth-child(4),
+    #odi li:nth-child(5){
+      width:50%;display:inline-block;margin:0!important;padding:0!important;float:left
+    }
+  }
+#all-social{
+  margin: 0;
+  background-color:#2a2a2a;
+  padding: 2%;
+  }
+  #all-social ul{
+    list-style: none;
+    padding-left: 0;
+  }
+  #all-social ul li{
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+    line-height: 45px;
+    position: relative;
+    width: 40px;
+    font-size: 15px;
+    height: 40px;
+    border-radius: 50%;
+    transition: 0.3s all;
+    color: #a8a8a8;
+
+  }
+  #all-social ul a:nth-child(1):hover li{
+    border-color: transparent;
+    background: #833ab4;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+  }
+  #all-social ul a:nth-child(3):hover li{
+    background: #3b5998;
+    border-color: transparent;
+    color: #fff;
+  }
+  #all-social ul a:nth-child(2):hover li{
+    border-color: transparent;
+    background: #ff0000;
+    color: #fff;
+  }
+  #all-social ul a:nth-child(4):hover li{
+    border-color: transparent;
+    background: #00aced;
+    color: #fff;
+  }
+  #all-social ul a:nth-child(5):hover li{
+    border-color: transparent;
+    background: #BD081C;
+    color: #fff;
+  }
+  #all-social ul a{
+    color: #333;
+  }
+#siri{
+  background-color:#1a1a1a;
+  padding-bottom:35px;
+  padding-top:35px;
+  margin: 0;
+}
+/* end index */
